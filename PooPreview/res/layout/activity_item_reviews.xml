@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+  
+        <TextView
+            android:id="@+id/averageRating"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_dark"
+          
+            android:text="Average rating: 2 \n" 
+            android:fadingEdge="horizontal"
+            />
+
+   
+
+ 	<TextView
+ 	    android:id="@+id/review1"
+ 	    android:layout_width="fill_parent"
+ 	    android:layout_height="wrap_content"
+ 	    android:background="@android:color/holo_blue_dark"
+ 	    android:text="the sky is blue and i love you. the sky is blue and i love you. the sky is blue and i love you. \n" />
+
+ 	<TextView
+ 	    android:id="@+id/review2"
+ 	    android:layout_width="fill_parent"
+ 	    android:layout_height="wrap_content"
+ 	    android:text="Other review: this bathroom is so bad lollolololollo oomg lolololololerskates roflcopter \n" 
+ 	    android:background="@android:color/holo_blue_dark"
+ 	    />
+ 		
+ 	<TextView
+ 	    android:id="@+id/review3"
+ 	    android:layout_width="fill_parent"
+ 	    android:layout_height="wrap_content"
+ 	    android:text="this bathroom sucks. YOU'RE ALL FIRED" 
+ 	    android:background="@android:color/holo_blue_dark"
+ 	    />
+
+ 	<RatingBar
+ 	    android:id="@+id/ratingBar1"
+ 	    android:layout_width="wrap_content"
+ 	    android:layout_height="wrap_content" 
+ 	    android:layout_gravity="center_horizontal"
+ 	    />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_weight="0.05"
+        android:ems="10"
+        android:gravity="bottom"
+        android:hint="	Give us your thoughts on this john"
+        android:inputType="textMultiLine" >
+		
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:onClick="submitReview"
+        android:textColor="@android:color/holo_blue_light"
+        android:background="@android:color/background_dark"
+        android:fontFamily="@android:string/ok"
+        android:text="Submit Review" />
+
+</LinearLayout>
